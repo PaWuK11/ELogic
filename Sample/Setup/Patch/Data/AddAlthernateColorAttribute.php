@@ -1,7 +1,7 @@
 <?php
-namespace Magento\Catalog\Setup\Patch\Data;
+namespace ELogic\Sample\Setup\Patch\Data;
 
-use Magento\Framework\Setup\EavSetupFactory;
+use Magento\Eav\Setup\EavSetupFactory;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Framework\Setup\Patch\PatchVersionInterface;
@@ -16,21 +16,29 @@ class AddAlthernateColorAttribute implements DataPatchInterface
      * @param EavSetupFactory $eavSetupFactory
      */
 
-    public function __construct( ModuleDataSetupInterface $moduleDataSetup, EavSetupFactory $eavSetupFactory) {
+    public function __construct(
+        ModuleDataSetupInterface $moduleDataSetup,
+        EavSetupFactory $eavSetupFactory
+    ) {
         $this->moduleDataSetup = $moduleDataSetup;
         $this->eavSetupFactory = $eavSetupFactory;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public static function getDependencies()
     {
         return [];
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function getAliases()
     {
         return [];
     }
-
     public function apply()
     {
         /** @var EavSetup $eavSetup */

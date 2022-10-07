@@ -1,5 +1,5 @@
 <?php
-namespace Magento\Catalog\Setup\Patch\Data;
+namespace ELogic\Sample\Setup\Patch\Data;
 
 
 use Magento\Framework\Setup\ModuleDataSetupInterface;
