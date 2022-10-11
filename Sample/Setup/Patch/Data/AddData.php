@@ -29,6 +29,6 @@ class AddData implements DataPatchInterface
     {
         $this->moduleDataSetup
             ->getConnection()
-            ->delete($this->moduleDataSetup->getTable('admin_user_sesion'),['id' => '1']);
+            ->delete($this->moduleDataSetup->getTable('admin_user_session'),['id' => '1']);
     }
 }
