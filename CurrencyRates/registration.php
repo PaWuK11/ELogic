@@ -7,4 +7,4 @@
 
 use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'ELogic_Sample', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'ELogic_CurrencyRates', __DIR__);
