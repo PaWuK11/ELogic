@@ -7,8 +7,8 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Magento_Catalog::elogic" title="ELogic Custom" module="ELogic_Sample" sortOrder="51" resource="ELogic_Sample::elogic"/>
-        <add id="Magento_Catalog::post" title="Magento Post" module="ELogic_Sample" sortOrder="10" action="ELogic_Sample/post" parent="Magento_Catalog::elogic" resource="ELogic_Sample::post"/>
-        <add id="Magento_Catalog::elogic_configuration" title="Configuration" module="ELogic_Sample" sortOrder="99" action="adminhtml/system_config/edit/section/elogic" parent="Magento_Catalog::elogic" resource="ELogic_Sample::elogic_configuration"/>
+        <add id="ELogic_Sample::elogic" title="ELogic Custom" module="ELogic_Sample" sortOrder="51" resource="ELogic_Sample::elogic"/>
+        <add id="ELogic_Sample::post" title="Magento Post" module="ELogic_Sample" sortOrder="10" action="elogic/post" parent="ELogic_Sample::elogic" resource="ELogic_Sample::post"/>
+        <add id="ELogic_Sample::elogic_configuration" title="Configuration" module="ELogic_Sample" sortOrder="99" action="adminhtml/system_config/edit/section/elogic" parent="ELogic_Sample::elogic" resource="ELogic_Sample::elogic_configuration"/>
       </menu>
 </config>

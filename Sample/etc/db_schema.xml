@@ -32,4 +32,12 @@
             <column name="sku"/>
         </index>
     </table>
+        <table name="post" resource="default" engine="innodb" comment="Post Table">
+        <column xsi:type="int" name="post_id" unsigned="true" nullable="false" identity="true"
+                comment="Entity ID"/>
+            <constraint xsi:type="primary" referenceId="PRIMARY">
+                <column name="post_id"/>
+            </constraint>
+    </table>
+
 </schema>
